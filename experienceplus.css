@@ -1,0 +1,210 @@
+@font-face{
+    font-family: "yell";
+    src:url("./字体/Yellowtail/Yellowtail-Regular.ttf");
+}
+@font-face{
+    font-family: "手写";
+    src:url("./字体/千图纤墨体（建议先保存，再下载）/千图纤墨体.ttf");
+}
+body{
+    font-family: "yell","手写";
+    color: #c4c6bf;
+    text-shadow: #5f635b 1px 1px 1px;
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3334;
+    justify-content: flex-end;
+    /* Because we want header to be sticky later */
+    height: 6.6rem;
+    padding: 0 4.8rem;
+    
+  }
+  a{
+    text-decoration: none;
+    color: #c4c6bf;
+    font-size: 30px;
+    text-shadow: #5f635b 1px 1px 1px;
+  }
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #eff3ee;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active ,.btn--outline:hover{
+    color: #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #9e9b8f;
+    background-color:  #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color:#5f635b;
+  }
+
+  .section-interests {
+    padding: 0.6rem 0;
+    background-color: #1e3334;
+  }
+  
+.subheading{
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.heading-secondary{
+    text-align: center;
+}
+
+  .interest {
+    width: 30vw;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+    background-color: #eff3ee;
+    box-shadow: #5f635b 5px 5px 5px;
+  }
+  
+  .grid--3-cols{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 6.4rem;
+  }
+  
+  .interest:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
+  
+  .interest-content {
+    padding: 0.5rem 4.8rem 0.8rem 4.8rem;
+    font-size: 20px;
+  }
+  
+  .interest-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+  }
+  
+  .interest-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .interest-attribute {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .interest-img {
+    width: 100%;
+  }
+
+  .interest-tags{
+    color: #4e4e4e;
+  }
+
+  .section-testimonials {
+    background-color:#eff3ee;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+  }
+  
+  .testimonials-container {
+    padding: 9.6rem;
+  }
+  
+  .testimonials-container .heading-secondary{
+    text-align: left;
+    font-size: 25px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    padding: 1.6rem;
+  }
+  
+  .gallery-item {
+    width: 15vw;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.5);
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.section-experience {
+  padding: 9.6rem 0;
+  background-color: #1e3334;
+}
+  
+  .feature-title {
+    font-size: 30px;
+    /* color: #333; */
+    font-weight: 700;
+    margin-bottom: 1.6rem;
+  }
+  
+  .feature-text {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #eff3ee;
+  }
+  .feature-text:hover{
+    text-shadow: #5f635b 3px 2px 3px;
+    cursor: pointer;
+  }

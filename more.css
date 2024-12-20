@@ -1,0 +1,204 @@
+@font-face{
+    font-family: "yell";
+    src:url("./字体/Yellowtail/Yellowtail-Regular.ttf");
+}
+@font-face{
+    font-family: "手写";
+    src:url("./字体/千图纤墨体（建议先保存，再下载）/千图纤墨体.ttf");
+}
+body{
+    font-family: "yell","手写";
+    color: #c4c6bf;
+    text-shadow: #5f635b 1px 1px 1px;
+    font-size: 30px;
+    background-color: #eff3ee;
+}
+h1{
+    font-size: 50px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3334;
+    justify-content: flex-end;
+    height: 6.6rem;
+    padding: 0 4.8rem;
+    
+  }
+  a{
+    text-decoration: none;
+    color: #c4c6bf;
+    font-size: 30px;
+    text-shadow: #5f635b 1px 1px 1px;
+  }
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #eff3ee;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active ,.btn--outline:hover{
+    color: #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #9e9b8f;
+    background-color:  #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color:#5f635b;
+  }
+
+  .section-interests {
+    padding: 0.6rem 0;
+    background-color: #1e3334;
+  }
+  
+.subheading{
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+}
+.section-cta {
+    padding: 4.8rem 0 0.8rem;
+  }
+  
+  .cta {
+    width: 80vw;
+    height: 30vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* background-color: #e67e22; */
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right bottom, #1e3334, #233b3c);
+    overflow: hidden;
+  }
+  
+  .cta-text-box {
+    padding: 0.8rem 6.4rem 6.4rem 6.4rem;
+    color: #eff3ee;
+  }
+  
+  .cta .heading-secondary {
+    /* color: #45260a; */
+    color: inherit;
+    margin-bottom: 3.2rem;
+  }
+  
+  .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    /* margin-bottom: 4.8rem; */
+  }
+  
+  .cta-img-box {
+    background-image: linear-gradient(
+        to right bottom,
+        #1e3334,
+        #1e3334
+      ),
+      url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .cta-form label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  
+  .cta-form input,
+  .cta-form select {
+    width: 60%;
+    height: 10%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #eff3ee;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+.btn,p{
+    font-size: 40px;
+    text-align: center;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #5f635b;
+}
+.title {
+    text-align: center;
+}
+.section-LeaveAMessage{
+    background-color: #1e3334;
+    padding-bottom: 6rem;
+}
+#wall {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #eff3ee;
+    border: 2px solid #5f635b;
+    box-shadow: 4px 4px 6px #5f635b;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.wish {
+    width: 120px;
+    height: 120px;
+    box-shadow: 1px 1px 2px rgb(153, 152, 152);
+    position: absolute;
+    padding: 8px;
+}
+
+.toTop {
+    z-index: 9999;
+}
+.cta-img-box{
+  width: 300px;
+  display: flex;
+  align-items: center
+}
+.cta-img-box img{
+  width: 100%;
+}
+table{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More</title>
+    <link rel="stylesheet" href="./more.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="./homeplus.html">Home</a></li>
+          <li>
+            <a class="main-nav-link" href="./experienceplus.html">Experience</a>
+          </li>
+          <li><a class="main-nav-link" href="./more.html">More</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#" target="_blank"
+              >Contact me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              Our narrative commences at this juncture.
+            </h2>
+            <p class="cta-text">我们的故事，从这里开始！</p>
+
+            <form class="cta-form" action="#">
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="Evie Hunt"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@163.com"
+                  required
+                />
+              </div>
+            </form>
+            <div class="btn btn--form"><p>Sign up</p></div>
+          </div>
+          <div class="cta-img-box" role="img">
+            <img src="./img/003.jpg" alt="" width="350px" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-LeaveAMessage">
+      <h1 class="title">Leave A Message</h1>
+      <div id="wall"></div>
+    </section>
+    <section>
+      <div class="btnContain">
+        <!-- <h4>联系</h4> -->
+        <table>
+          <tr>
+            <td>电话：</td>
+            <td>13404009700</td>
+          </tr>
+          <tr>
+            <td>邮箱：</td>
+            <td>1719854949@qq.com</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script>
+    window.addEventListener("load", function () {
+      initWall();
+    });
+    function initWall() {
+      document.querySelector("#wall").addEventListener("click", function (e) {
+        if (e.target.id != "wall") return false;
+        const wishText = prompt("对我说点什么吧...").trim();
+        if (!wishText) return false;
+
+        // const { x: offsetX, y: offsetY } = e;
+        const x = e.offsetX;
+        const y = e.offsetY;
+        const wish = document.createElement("div");
+        wish.classList.add("wish");
+        wish.innerHTML = wishText;
+        wish.style.top = y + "px";
+        wish.style.left = x + "px";
+        wish.style.backgroundColor = randomColor();
+        wish.addEventListener("click", function () {
+          setToTop(this);
+        });
+        this.appendChild(wish);
+        setToTop(wish);
+      });
+
+      function setToTop(item) {
+        const topOne = item.parentNode.querySelector(".toTop");
+        topOne && topOne.classList.remove("toTop");
+        item.classList.add("toTop");
+      }
+    }
+    function randomColor() {
+      var colorlist = [
+        "rgb(243, 249, 241)",
+        "rgb(123, 207, 166)",
+        "rgb(84, 150, 136)",
+        "rgb(136, 173, 166)",
+        "rgb(192, 235, 215)",
+        "rgb(224, 240, 233)",
+        "rgb(187, 205, 197)",
+      ];
+      return colorlist[Math.floor(Math.random() * colorlist.length)];
+    }
+  </script>
+</html>

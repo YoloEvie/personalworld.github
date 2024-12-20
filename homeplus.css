@@ -1,0 +1,290 @@
+@font-face{
+    font-family: "yell";
+    src:url("./字体/Yellowtail/Yellowtail-Regular.ttf");
+}
+@font-face{
+    font-family: "手写";
+    src:url("./字体/千图纤墨体（建议先保存，再下载）/千图纤墨体.ttf");
+}
+body{
+    font-family: "yell","手写";
+    color: #c4c6bf;
+    text-shadow: #5f635b 1px 1px 1px;
+    font-size: 30px;
+}
+h1{
+    font-size: 50px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e3334;
+    justify-content: flex-end;
+    /* Because we want header to be sticky later */
+    height: 6.6rem;
+    padding: 0 4.8rem;
+    
+  }
+  a{
+    text-decoration: none;
+    color: #c4c6bf;
+    font-size: 30px;
+    text-shadow: #5f635b 1px 1px 1px;
+  }
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    
+  }
+  
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #eff3ee;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+  }
+  
+  .main-nav-link:hover,
+  .main-nav-link:active ,.btn--outline:hover{
+    color: #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #9e9b8f;
+    background-color:  #c4c6bf;
+  }
+  
+  .main-nav-link.nav-cta:hover,
+  .main-nav-link.nav-cta:active {
+    background-color:#5f635b;
+  }
+  
+  .btn-mobile-nav {
+    display: none;
+  }
+  .btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  .btn--outlines{
+    width: 10vw;
+    background-color:#5f635b ;
+    border-radius: 15px;
+  }
+  .btn--outline{
+    text-align: center;
+    color: #eff3ee;
+  }
+
+  .section-hero {
+    background-color: #eff3ee;
+    padding: 0.8rem 0 0.6rem 0;
+  }
+  
+  .hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+    
+  }
+  .hero-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+  }
+  
+  .hero-img {
+    width: 100%;
+  }
+  
+  @media (max-width: 1344px) {
+    .hero {
+      max-width: 120rem;
+    }
+    .heading-primary {
+      font-size: 4.4rem;
+    }
+  }
+  @media (max-width: 1200px) {
+    html{
+      /* font-size: 56%; */
+      font-size: 56.25%;
+    }
+    .hero{
+      gap: 4.8rem;
+    }
+  }
+  @media (max-width: 944px) {
+    html{
+      font-size: 50%;
+    }
+    .hero{
+      gap:6.4rem;
+      grid-template-columns: 1fr;
+      padding: 0 8rem;
+    }
+    .hero-text-box {
+      text-align: center;
+    }
+    .delivered-meals {
+      justify-content: center;
+      margin-top: 3.2rem;
+    }
+    .hero-img-box {
+      text-align: center;
+    }
+    .hero-img {
+      width: 60%;
+    }
+  }
+  .section-interests {
+    padding: 0.6rem 0;
+    background-color: #1e3334;
+  }
+  
+.subheading{
+    font-size: 50px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.heading-secondary{
+    text-align: center;
+}
+
+  .interest {
+    width: 28vw;
+    height: 40vw;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+    background-color: #eff3ee;
+    box-shadow: #5f635b 5px 5px 5px;
+  }
+.diets{
+  width: 28vw;
+    height: 40vw;
+}
+  .diets img{
+    width: 100%;
+    object-fit:fill;
+  }
+  
+  .grid--3-cols{
+    /* padding: 10vw; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    column-gap: 1.2rem;
+    row-gap: 1.4rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .interest:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  }
+  
+  .interest-content {
+    padding: 0.8rem 2.8rem 2.8rem 2.8rem;
+  }
+  
+  .interest-title {
+    font-size: 2.4rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 2.2rem;
+    margin-top: 1.2rem;
+  }
+  .interest-tags{
+    font-size: 1.5rem;
+    color: #4e4e4e;
+    margin-bottom: 1.2rem;
+  }
+  .interest-attributes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .interest-attribute {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .interest-img {
+    width: 100%;
+  }
+
+  .interest-tags{
+    color: #4e4e4e;
+  }
+
+
+  .section-testimonials {
+    background-color:#eff3ee;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+  }
+  
+  .testimonials-container {
+    padding: 9.6rem;
+  }
+  
+  .heading-secondary{
+    text-align: left;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+    padding: 1.6rem;
+  }
+  
+  .gallery-item {
+    width: 15vw;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  
+  .gallery-item img {
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.5);
+  }
+  .section-remark{
+    width: 100%;
+    background-color:#1e3334 ;
+    padding: 0.8rem 0 0.6rem 0;
+    text-align: center;
+  }

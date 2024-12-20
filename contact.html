@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      @font-face {
+        font-family: "yell";
+        src: url("./字体/Yellowtail/Yellowtail-Regular.ttf");
+      }
+      @font-face {
+        font-family: "手写";
+        src: url("./字体/千图纤墨体（建议先保存，再下载）/千图纤墨体.ttf");
+      }
+      body {
+        font-family: "yell", "手写";
+        color: #c4c6bf;
+        text-shadow: #5f635b 1px 1px 1px;
+        font-size: 30px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      .section-hero {
+        background-color: #eff3ee;
+        padding: 0.8rem 0 0.6rem 0;
+      }
+
+      .hero {
+        max-width: 130rem;
+        margin: 0 auto;
+        padding: 0 3.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 9.6rem;
+        align-items: center;
+      }
+
+      .hero-description {
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 4.8rem;
+      }
+
+      .hero-img {
+        width: 100%;
+      }
+
+      @media (max-width: 1344px) {
+        .hero {
+          max-width: 120rem;
+        }
+        .heading-primary {
+          font-size: 4.4rem;
+        }
+      }
+      @media (max-width: 1200px) {
+        html {
+          /* font-size: 56%; */
+          font-size: 56.25%;
+        }
+        .hero {
+          gap: 4.8rem;
+        }
+      }
+      @media (max-width: 944px) {
+        html {
+          font-size: 50%;
+        }
+        .hero {
+          gap: 6.4rem;
+          grid-template-columns: 1fr 1fr;
+          padding: 0 8rem;
+        }
+        .hero-text-box {
+          text-align: center;
+        }
+        .delivered-meals {
+          justify-content: center;
+          margin-top: 3.2rem;
+        }
+        .hero-img-box {
+          text-align: center;
+        }
+        .hero-img {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="hero-text-box">
+          <h1 class="heading-primary">Welcome to my blog！</h1>
+          <div class="hero-description">
+            人生的美妙之处在于遇见了一群有趣的人，从陌生到熟悉，你好，新朋友！
+          </div>
+        </div>
+        <div class="btnContain">
+          <!-- <h4>联系</h4> -->
+          <table>
+            <tr>
+              <td>电话：</td>
+              <td>134....9700</td>
+            </tr>
+            <tr>
+              <td>邮箱：</td>
+              <td>171....949@qq.com</td>
+            </tr>
+          </table>
+        </div>
+        <div class="hero-img-box">
+          <img src="./img/001.png" class="hero-img" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
